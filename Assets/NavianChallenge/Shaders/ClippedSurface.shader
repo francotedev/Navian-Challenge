@@ -30,6 +30,10 @@ Shader "Navian/ClippedSurface"
             float4 _SectionPoint;   // world-space point on the cut plane
             float4 _SectionNormal;  // world-space cut normal (voxels on the +side are removed)
 
+            float    _CraniotomyEnabled;
+            float    _CraniotomySphere;  // 1 = spherical window, 0 = box
+            float4x4 _CraniotomyMatrix; // world -> craniotomy local; inside the unit shape is removed
+
             struct appdata { float4 vertex : POSITION; float3 normal : NORMAL; };
             struct v2f
             {
@@ -51,6 +55,16 @@ Shader "Navian/ClippedSurface"
             {
                 if (_SectionEnabled > 0.5 && dot(i.worldPos - _SectionPoint.xyz, _SectionNormal.xyz) > 0.0)
                     discard;
+
+                // Craniotomy box: discard fragments that fall inside the box (BoxExclusive), so
+                // the meshes carve away together with the volume under the same cutout.
+                if (_CraniotomyEnabled > 0.5)
+                {
+                    float3 bl = mul(_CraniotomyMatrix, float4(i.worldPos, 1.0)).xyz;
+                    bool inside = (_CraniotomySphere > 0.5) ? (length(bl) < 0.5) : all(abs(bl) <= 0.5);
+                    if (inside)
+                        discard;
+                }
 
                 float3 n = normalize(i.worldNormal) * (facing > 0 ? 1.0 : -1.0);
                 float ndotl = saturate(dot(n, normalize(float3(0.3, 0.85, 0.45))));

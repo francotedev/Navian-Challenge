@@ -1,0 +1,601 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PC" at "2026-07-15T00:07:15.8895777Z"
+Built from '6000.4/staging' branch; Version is '6000.4.0f1 (8cf496087c8f) revision 9237654'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 64651 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-07-15T00:07:15Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/PC/Documents/navian-xr-challenge
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+59935
+-licensingIpc
+LicenseClient-PC
+-force-d3d12
+-job-worker-count
+15
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/PC/Documents/navian-xr-challenge
+C:/Users/PC/Documents/navian-xr-challenge
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [50996]  Target information:
+
+Player connection [50996]  * "[IP] 192.168.0.48 [Port] 0 [Flags] 2 [Guid] 1728122785 [EditorId] 1728122785 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-I2O35MU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [50996] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [50996] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 15
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.4.0f1 (8cf496087c8f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/PC/Documents/navian-xr-challenge/Assets
+Forcing GfxDevice: Direct3D 12
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 4070 Ti (ID=0x2782)
+    Vendor:          NVIDIA
+    VRAM:            11994 MB
+    App VRAM Budget: 11226 MB
+    Driver:          32.0.15.9186
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
+CodeReloadManager initialized
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-PC"
+[Licensing::IpcConnector] LicenseClient-PC channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PC-6000.4.0" at "2026-07-15T00:07:17.1545275Z"
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              db2a4b11dc63483dba14173b8a41e7aa
+  Correlation Id:          437aa0d2c3837a547cd0fb8707edf142
+  External correlation Id: 5757103202384410806
+  Machine Id:              1NzN35J4l5covynla2kyDaSjpLc=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-PC-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 1.16s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PC-6000.4.0-notifications" at "2026-07-15T00:07:18.3209012Z"
+[Licensing::Module] Licensing Background thread has ended after 2.43s
+[Licensing::Module] Licensing is initialized (took 0.98s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4673982770363-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.983375 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.304 seconds
+Domain Reload Profiling: 1731ms
+	BeginReloadAssembly (152ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (1045ms)
+	LoadAllAssembliesAndSetupDomain (177ms)
+		LoadAssemblies (146ms)
+		AnalyzeDomain (168ms)
+			TypeCache.Refresh (167ms)
+				TypeCache.ScanAssembly (156ms)
+	FinalizeReload (305ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (63ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (79ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.296 seconds
+Domain Reload Profiling: 570ms
+	BeginReloadAssembly (170ms)
+		DisableScriptedObjects (5ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (17ms)
+		LoadAssemblies (101ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (3ms)
+	FinalizeReload (297ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (68ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (5ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 212 unused Assets / (130.7 KB). Loaded Objects now: 838.
+Memory consumption went from 68.8 MB to 68.7 MB.
+Total: 3.219900 ms (FindLiveObjects: 0.066600 ms CreateObjectMapping: 0.011500 ms MarkObjects: 3.044800 ms  DeleteObjects: 0.095500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 27298.775116 seconds.
+  path: Assets/NavianChallenge/Materials/Veins.mat
+  importAddress: Guid(153cf105f186f92bb8e106ecec62dd62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/NavianChallenge/Materials/Veins.mat using Guid(153cf105f186f92bb8e106ecec62dd62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '587b84f877b5ac67322349f2edfa3c97') in 0.1125006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=72d31d119ac31b20ef798e4900dad67e DependenciesID=28ef78be3314a46eac6594dd87589297 StaticDependenciesID=e9d813fb1833276fec4b1b00f7f026c5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ThirdParty/openDicom/Encoding/EncodingException.cs
+  importAddress: Guid(129f22383f24eb84eb1b360814f140a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/openDicom/Encoding/EncodingException.cs using Guid(129f22383f24eb84eb1b360814f140a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4edb5b84a6390a763237152535fd38aa') in 0.0122356 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7327d8211846ee60abe3eeccab99f975 DependenciesID=aa19299f66bba3ca754738c9aa31d4ca StaticDependenciesID=5a3ce7a5cd055ee18cc506f8f32ac4e7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/ThirdParty/openDicom/Encoding/FD.cs
+  importAddress: Guid(f6afdbd7b8a41f94bad889a400c4fa07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/openDicom/Encoding/FD.cs using Guid(f6afdbd7b8a41f94bad889a400c4fa07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6ac5708623641851470ced2052518cad') in 0.0080742 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5b21cf88f40a5bc60a6992fb441e9474 DependenciesID=52b6a13f34dffc18b85762dd3e2fe679 StaticDependenciesID=1b466be57ee6c51e6025bf655f8d1d98 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Shaders/CrossSectionSphere.shader
+  importAddress: Guid(a83f9966afde03b46bdb8c6ca8ce1524) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Shaders/CrossSectionSphere.shader using Guid(a83f9966afde03b46bdb8c6ca8ce1524) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd7b30fd5f38fc96d17566dd3b3aecb6d') in 0.0088294 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1379e2fd44543942dbeadbb1667d9d33 DependenciesID=cef37a9a133927f3652d069f667d6979 StaticDependenciesID=910a9481ae027dc6ff5a1ab7ae5f9818 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/ThirdParty/openDicom/Registry/DataElementDictionaryEntry.cs
+  importAddress: Guid(c14ee26b39061034c850c866fa2474be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/openDicom/Registry/DataElementDictionaryEntry.cs using Guid(c14ee26b39061034c850c866fa2474be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '78b1673bbe07a5bdee8796333381a4d1') in 0.0063212 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7d47d6445b14b93deaaba5e861e7f81a DependenciesID=1466958358a50b54d4afcf72eab9cf28 StaticDependenciesID=de8af04b152b52f47bf65b7c579f02c4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/ThirdParty/openDicom/DicomContext.cs
+  importAddress: Guid(13857bdff151a2d4fb3751ea274d7fb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/openDicom/DicomContext.cs using Guid(13857bdff151a2d4fb3751ea274d7fb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '825ed1d23df6d1414f364c7c367fd0e9') in 0.0085282 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=121d23143e55f5814b7d98d73386eaa2 DependenciesID=e230b63b60238851f09183d2ee00c6d4 StaticDependenciesID=bfdbf40521972955c113bf9f9179bec6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/openDicom/DataStructure/DataSet/NestedDataSet.cs
+  importAddress: Guid(b03b9acb6738b804190c0cb90aba6057) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/openDicom/DataStructure/DataSet/NestedDataSet.cs using Guid(b03b9acb6738b804190c0cb90aba6057) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd8c8a0475ce6977b1626d8fb7edc30e1') in 0.0087001 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=789ad9bae67c83637d34bf78c0285d78 DependenciesID=634ce92fdc33aed380137c587441a6af StaticDependenciesID=63d3a348b80fc3d692cc466b7d1349a4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Resources/Icons/RotateRight.png
+  importAddress: Guid(6464c9facdaa19cbea63befd1a7daaca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Resources/Icons/RotateRight.png using Guid(6464c9facdaa19cbea63befd1a7daaca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c055342ebefc52ee4688ae8912f51081') in 0.0385488 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=76b570cccb98db5d5586893cd68fa3db DependenciesID=399d0fb30461a0c553de1606b2024ef9 StaticDependenciesID=c2853fb49239294ddfbeb8738bfd44a1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Shaders/TransferFunctionShader.shader
+  importAddress: Guid(9117c7b46d847fc41adc9d9bb2cfa4c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Shaders/TransferFunctionShader.shader using Guid(9117c7b46d847fc41adc9d9bb2cfa4c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '657cd5e0da815e6247fc1a32ba5ad190') in 0.0081358 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=129d3adcc0ee14304dbe8eea51c2da04 DependenciesID=131583193e16cd560b8f8cff41f21e18 StaticDependenciesID=d964c7dae9f686c952960571648f2079 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Materials/CrossSectionPlaneMat.mat
+  importAddress: Guid(6e564749dcca6944ca78723ffd119eca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Materials/CrossSectionPlaneMat.mat using Guid(6e564749dcca6944ca78723ffd119eca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fc57bf30b7aa90ba68facdc56015f9e4') in 0.0080866 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=897217d6df33add5b611e47bb29dbea7 DependenciesID=e8489ab9cb28e53f51f5692b103c5e47 StaticDependenciesID=840c788bf4f6f0b3c585aba18584e87d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Materials/CrossSectionSphere.mat
+  importAddress: Guid(9248a20fc678a2a40a99d6b7feffc1b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Materials/CrossSectionSphere.mat using Guid(9248a20fc678a2a40a99d6b7feffc1b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'aa2af5a6d939e7cdc27383201184ffcc') in 0.0268071 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5e5ab433efd207db5e68a124ae05c313 DependenciesID=78014bf3b8524d0d8dd2451c4854201f StaticDependenciesID=6aabf75e1c46cd41b4a5fe25e5969a0f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Editor/EditorDatasetImporter.cs
+  importAddress: Guid(ac8d63b38b94eaa41a1b278199de05cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Editor/EditorDatasetImporter.cs using Guid(ac8d63b38b94eaa41a1b278199de05cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'feb3ca9bb2507af02846c60de051e363') in 0.0065856 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9b4730f67833c1c98656f962ed968b85 DependenciesID=38cf6051d372c2c40cde7e1d36f1f0bf StaticDependenciesID=966a09411e61bf810fe0e04bc2cf8cfb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/NavianChallenge/Scripts/AtlasVolumeLoader.cs
+  importAddress: Guid(8efd1be973eb8ba92ae9c5b7a4ae861a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/NavianChallenge/Scripts/AtlasVolumeLoader.cs using Guid(8efd1be973eb8ba92ae9c5b7a4ae861a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2529c80ab31b61de9145755663b6a8c7') in 0.007007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c77bde01a5bcd3f7a4d73146f0c6a6b3 DependenciesID=7358abd1c93beac65d7c38c6fbbf82fb StaticDependenciesID=341b195a39038acbd66a21622de3149b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/ThirdParty/openDicom/Encoding/FL.cs
+  importAddress: Guid(8e1a30329749e3541833668b1e99e787) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/openDicom/Encoding/FL.cs using Guid(8e1a30329749e3541833668b1e99e787) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd3d9e0ceaa059bbba842ee62d4b06787') in 0.0063933 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d2e74bd3381f4038b569864d4ca50a9f DependenciesID=414cffb2b3bd5f0e439ba1ea67c05258 StaticDependenciesID=8697ea428b5883ee8f2a1fd2285cbbe3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/NavianChallenge/Materials/Skin.mat
+  importAddress: Guid(0640b23fd408a45e6b3d2da5c1f033e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/NavianChallenge/Materials/Skin.mat using Guid(0640b23fd408a45e6b3d2da5c1f033e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '82fb6f9e712ee562feda5c79bce5ea3a') in 0.0077701 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9cdf8c7072e5ae4afbcd0708108e9c2e DependenciesID=58576c8315484a1eedb25d0a39213b76 StaticDependenciesID=7a50bfc6af75328a74cf9e6f90432bd5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/NavianChallenge/Materials/WhiteMatter.mat
+  importAddress: Guid(86314e0f0b4d314ae89490f0061104f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/NavianChallenge/Materials/WhiteMatter.mat using Guid(86314e0f0b4d314ae89490f0061104f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1cae5687446ae0d85571c0f1497a2295') in 0.0077083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=763608039ffa1406df3f92510af7f071 DependenciesID=95b4c2d8469f185551d08cf9e65fd963 StaticDependenciesID=848a46cfbda81cedaf923806a47657ac 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.026769 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Scripts/Importing/DatasetImporterUtility.cs
+  importAddress: Guid(60ca811454f45ec42bd6186bb3be50d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Scripts/Importing/DatasetImporterUtility.cs using Guid(60ca811454f45ec42bd6186bb3be50d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e0fd89bf459a50b77e609790295796e6') in 0.0111024 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4f2ed90dc69daba35af8bb160eaf5b3a DependenciesID=aea447e11f816cb7be5f6f3fa341d904 StaticDependenciesID=474a001a4caa4f15485e213797dc56e3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Scripts/VolumeQueries/VolumeRaycaster.cs
+  importAddress: Guid(f9e1d43b372b3cbb1b6e8fcd62935aaa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Scripts/VolumeQueries/VolumeRaycaster.cs using Guid(f9e1d43b372b3cbb1b6e8fcd62935aaa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '41372f06729687fd4e861abf63d8a4de') in 0.0072508 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=048ad66e36cf2376db238306e4d34a2b DependenciesID=3885ec1c5d59182ee8c17173c52d1f72 StaticDependenciesID=cf609cfa9919cc617ec23b45eab59a4d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Scripts/GUI/Components/RuntimeFileBrowserComponent.cs
+  importAddress: Guid(a3505220cff523a44955829adad14886) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Scripts/GUI/Components/RuntimeFileBrowserComponent.cs using Guid(a3505220cff523a44955829adad14886) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '234ea10b26458763c39f3d762dfa1b1e') in 0.0077821 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=180dd0f7204237091b53cf5245f2b287 DependenciesID=b45ba7fcf5c3e8eaea50fd5d30f80a6d StaticDependenciesID=3061b47f80121c06d59ea3125f6630b4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Scripts/VolumeObject/CrossSectionManager.cs
+  importAddress: Guid(c065f1884402af707a0e8d778d50d29e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Scripts/VolumeObject/CrossSectionManager.cs using Guid(c065f1884402af707a0e8d778d50d29e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2728ea22bfe7525b79948336de043597') in 0.0079738 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=06b8e3e6c05cdddb0518efa0d484ad7c DependenciesID=3618bd0cf3e63cc5308461376568dca8 StaticDependenciesID=7384c7c0a311bcce9e31a43d5282edf0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Scripts/VolumeObject/CrossSectionPlane.cs
+  importAddress: Guid(030645f63ce11d14ea77ce39291d70da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Scripts/VolumeObject/CrossSectionPlane.cs using Guid(030645f63ce11d14ea77ce39291d70da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b2516b8677d32befdf6551889b22459d') in 0.0085017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ce958ee6ff3dbbef6860d54553644557 DependenciesID=ec006ae3bc3d3ed456bdd276ccaab931 StaticDependenciesID=42ab2b5152b1f5620df8d48647032ed4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Scripts/VolumeData/VolumeDataset.cs
+  importAddress: Guid(6c292ee2920c4d64989a78d4ed9abb7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Scripts/VolumeData/VolumeDataset.cs using Guid(6c292ee2920c4d64989a78d4ed9abb7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '68b6f5a9831e67c25adf5075c8bc91d3') in 0.0098672 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b8ce536f479285f8cf8830fb68fe9509 DependenciesID=013ffc766d2a6722cf3652ca627352b4 StaticDependenciesID=29848f4ad04a5d5eed04ab3b56b9c8d3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Scripts/Importing/ImageFileImporter/Interface/IImageFileImporter.cs
+  importAddress: Guid(d3a3d1be37fcc3c4893fa3b9bb747e51) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Scripts/Importing/ImageFileImporter/Interface/IImageFileImporter.cs using Guid(d3a3d1be37fcc3c4893fa3b9bb747e51) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ba9990c6c5940733ccaaedf59d23d4e8') in 0.0115137 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0a830f202b5a1a7618b2debe39d2c52b DependenciesID=92d946b44e7e4d43d0188aa1b4a9bfd0 StaticDependenciesID=417f8a285d5030f8516dde8061484fe7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Scripts/Importing/ImageFileImporter/Nifti.NET/NiftiImporter.cs
+  importAddress: Guid(4d412d1b6da99fff48649902229c8d07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Scripts/Importing/ImageFileImporter/Nifti.NET/NiftiImporter.cs using Guid(4d412d1b6da99fff48649902229c8d07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1748fa3799c72e377537e93737945aef') in 0.0080693 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d568aa2a4accd4b883182d741d27e380 DependenciesID=d466c03c5df33349cc1b9191042e6b8f StaticDependenciesID=8bd06d92e17cc0a97174a98fbd313511 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/ThirdParty/UnityVolumeRendering/Scripts/Importing/ImageSequenceImporter/SimpleITK/SimpleITKImageSequenceImporter.cs
+  importAddress: Guid(adbf511b47c12914e980501f59b75e55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/ThirdParty/UnityVolumeRendering/Scripts/Importing/ImageSequenceImporter/SimpleITK/SimpleITKImageSequenceImporter.cs using Guid(adbf511b47c12914e980501f59b75e55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9c1a9d086ec737e0481c9fb2ee14fe98') in 0.0078089 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1ec1d15aa6abde06ab5e935516efb201 DependenciesID=51dfaf16fbd62a9e30c7c3f6da64930d StaticDependenciesID=35e2021eae9ce3f775c4a1dc35139a22 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.447048 seconds.
+  path: Assets/NavianChallenge/Materials/Skin.mat
+  importAddress: Guid(0640b23fd408a45e6b3d2da5c1f033e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/NavianChallenge/Materials/Skin.mat using Guid(0640b23fd408a45e6b3d2da5c1f033e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bb13e1a4e637ee01878a10fc4f4a87a2') in 0.0095607 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5b57d14d5472bb7bbb993f84e65f3192 DependenciesID=9cd440239ae642b6f97fdff5545178c9 StaticDependenciesID=1ad83619e9dc26dc44591b6b99551cbb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.302 seconds
+Domain Reload Profiling: 566ms
+	BeginReloadAssembly (159ms)
+		DisableScriptedObjects (4ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (18ms)
+		LoadAssemblies (101ms)
+		AnalyzeDomain (7ms)
+			TypeCache.Refresh (3ms)
+			BuildScriptInfoCaches (3ms)
+	FinalizeReload (303ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (69ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 210 unused Assets / (101.5 KB). Loaded Objects now: 841.
+Memory consumption went from 69.9 MB to 69.8 MB.
+Total: 3.077400 ms (FindLiveObjects: 0.057900 ms CreateObjectMapping: 0.007700 ms MarkObjects: 2.936300 ms  DeleteObjects: 0.074800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

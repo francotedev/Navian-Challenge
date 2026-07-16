@@ -30,7 +30,6 @@ namespace NavianChallenge
             state = appState;
 
             RectTransform panel = UIFactory.Panel(parent, UITheme.PanelBg, "ToolPanel");
-            UIFactory.Stretch(panel);
             UIFactory.VerticalLayout(panel.gameObject, pad: 12, spacing: 6);
 
             var header = UIFactory.Label(panel, "TOOLS", 15, UITheme.Accent);

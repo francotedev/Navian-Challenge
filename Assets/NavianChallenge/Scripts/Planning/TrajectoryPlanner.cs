@@ -90,8 +90,9 @@ namespace NavianChallenge
             if (Input.GetMouseButtonDown(0) && !overUI)
             {
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out RaycastHit handleHit, 1e6f, handleMask))
-                    dragging = handleHit.transform;                       // grab an existing point
+                if (Physics.Raycast(ray, out RaycastHit handleHit, 1e6f, handleMask)
+                    && (handleHit.transform == targetHandle || handleHit.transform == entryHandle))
+                    dragging = handleHit.transform;                       // grab one of our points
                 else if (Physics.Raycast(ray, out RaycastHit surfHit, 1e6f, surfaceMask))
                     Place(surfHit.point, surfHit.normal);                 // place the next point
             }

@@ -46,12 +46,22 @@ namespace NavianChallenge
             volume.atlasRoot = atlasRoot;
             var cut = gameObject.AddComponent<CrossSectionController>();
             cut.volume = volume;
+            var crani = gameObject.AddComponent<CraniotomyController>();
+            crani.volume = volume;
+            crani.appState = state;
+            crani.mmPerUnit = 1f; // scene maps the MRI's mm FOV to world units 1:1
+            var mpr = gameObject.AddComponent<MprController>();
+            mpr.volume = volume;
+            mpr.appState = state;
+            mpr.cam = camera;
+            mpr.markerRadiusWorld = Mathf.Max(0.5f, atlasBounds.size.magnitude * 0.012f);
 
             SetupInteraction(state);
-            ReadoutPanel readout = BuildUI(state, layers, volume, cut);
+            ReadoutPanel readout = BuildUI(state, layers, volume, cut, crani, mpr);
             SetupPlanning(state, readout);
+            SetupMeasure(state);
 
-            Debug.Log("[NeuroPath] Ready (MRI volume + layers + raycast UI + trajectory planner).");
+            Debug.Log("[NeuroPath] Ready (MRI volume + layers + raycast UI + trajectory planner + craniotomy + measure + MPR).");
         }
 
         // --- resolution ---
@@ -157,7 +167,8 @@ namespace NavianChallenge
 
         // --- UI ---
 
-        ReadoutPanel BuildUI(AppState state, AtlasLayers layers, VolumeController volume, CrossSectionController cut)
+        ReadoutPanel BuildUI(AppState state, AtlasLayers layers, VolumeController volume,
+                             CrossSectionController cut, CraniotomyController crani, MprController mpr)
         {
             float camDist = Vector3.Distance(camera.transform.position, atlasBounds.center);
             float d = Mathf.Max(camera.nearClipPlane * 3f, camDist * panelDepthFrac);
@@ -175,8 +186,16 @@ namespace NavianChallenge
             left.gameObject.AddComponent<MriPanel>().Build(sections, volume, cut);
             left.gameObject.AddComponent<LayerPanel>().Build(sections, layers);
 
-            Canvas right = MakePanel("Canvas_Tools", new Vector2(300f, 300f), 0.52f, +1f, halfH, halfW, d);
-            right.gameObject.AddComponent<ToolPanel>().Build(right.transform, state);
+            // Right canvas: the tool selector with the craniotomy controls stacked beneath it,
+            // laid out top-down like the left canvas so the two panels read as one column.
+            Canvas right = MakePanel("Canvas_Tools", new Vector2(300f, 470f), 0.64f, +1f, halfH, halfW, d);
+            RectTransform toolSections = UIFactory.Panel(right.transform, new Color(0f, 0f, 0f, 0f), "Sections");
+            UIFactory.Stretch(toolSections);
+            var toolSectionsImg = toolSections.GetComponent<Image>();
+            if (toolSectionsImg != null) toolSectionsImg.raycastTarget = false;
+            UIFactory.VerticalLayout(toolSections.gameObject, pad: 0, spacing: 8);
+            right.gameObject.AddComponent<ToolPanel>().Build(toolSections, state);
+            right.gameObject.AddComponent<CraniotomyPanel>().Build(toolSections, crani, state);
 
             // Bottom-centre readout for the trajectory planner.
             float rWorldH = halfH * 2f * 0.30f;
@@ -188,6 +207,21 @@ namespace NavianChallenge
 
             var readout = bottom.gameObject.AddComponent<ReadoutPanel>();
             readout.Build(bottom.transform, initialDepthMm: 40f, initialRadiusMm: 5f);
+
+            // MPR slice panel: a wide strip along the bottom, shown only in Slices mode (it and the
+            // trajectory readout swap in/out by tool, driven by MprController).
+            var mprPixel = new Vector2(960f, 340f);
+            float mprWorldH = halfH * 2f * 0.34f;
+            Canvas mprCanvas = UIFactory.WorldCanvas("Canvas_MPR", mprPixel, mprWorldH, camera);
+            float mprY = -(halfH - mprWorldH * 0.5f - halfH * edgeMargin);
+            mprCanvas.transform.SetParent(camera.transform, worldPositionStays: false);
+            mprCanvas.transform.localPosition = new Vector3(0f, mprY, d);
+            mprCanvas.transform.localRotation = Quaternion.identity;
+            mprCanvas.gameObject.AddComponent<MprPanel>().Build(mprCanvas.transform, mpr, camera);
+
+            mpr.mprCanvasObject = mprCanvas.gameObject;
+            mpr.readoutObjectToHide = bottom.gameObject;
+
             return readout;
         }
 
@@ -209,6 +243,18 @@ namespace NavianChallenge
             planner.handleMask = 1 << 2; // Ignore Raycast layer used for the handle spheres
             planner.handleRadiusWorld = Mathf.Max(0.5f, atlasBounds.size.magnitude * 0.016f);
             planner.lineColor = UITheme.Accent;
+        }
+
+        void SetupMeasure(AppState state)
+        {
+            var measure = gameObject.AddComponent<MeasureTool>();
+            measure.appState = state;
+            measure.cam = camera;
+            measure.mmPerUnit = 1f; // scene maps the MRI's mm FOV to world units 1:1
+            measure.surfaceMask = Physics.DefaultRaycastLayers;
+            measure.handleMask = 1 << 2; // Ignore Raycast layer used for the handle spheres
+            measure.handleRadiusWorld = Mathf.Max(0.5f, atlasBounds.size.magnitude * 0.016f);
+            measure.lineColor = UITheme.Accent;
         }
 
         Canvas MakePanel(string name, Vector2 pixel, float heightFrac, float side,
