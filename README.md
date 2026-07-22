@@ -4,9 +4,6 @@ Planificador de trayectorias neuroquirúrgicas, construido para el desafío de X
 
 La idea fue pasar de un visor a una herramienta de planificación. Además de explorar la anatomía —capas, cortes, ventana/nivel—, se traza una trayectoria de abordaje (entrada, blanco, profundidad) y el sistema responde la pregunta que importa en la práctica: si esa trayectoria cruza un vaso o no. Todo desde una UI flotante estilo XR que se opera con el mouse, y con las medidas en milímetros reales.
 
-![La MRI volumétrica y las cuatro estructuras segmentadas, alineadas en el mismo espacio](docs/images/mri_plus_meshes.png)
-
-*(Pendiente: un GIF corto de la demo en `docs/images/` mostrando el corredor de seguridad, la craniotomía y los cortes 2D.)*
 
 ## Índice
 
@@ -19,7 +16,6 @@ La idea fue pasar de un visor a una herramienta de planificación. Además de ex
 7. [Qué mejoraría con más tiempo](#qué-mejoraría-con-más-tiempo)
 8. [Dataset](#dataset)
 9. [Troubleshooting](#troubleshooting)
-10. [Licencia y créditos](#licencia-y-créditos)
 
 ## Cómo ejecutarlo
 
@@ -160,8 +156,3 @@ MRI `IXI025` T1, 256 × 256 × 150 voxels, FOV 240 × 240 × 180 mm. Cuatro mall
 - *Aviso de Input Manager*: la escena usa el Input Manager clásico por simplicidad. Unity sugiere migrar al Input System package; es opcional.
 - *Los cortes MPR se ven planos o blancos*: ajustá Window min/max en el panel MRI; la ventana por defecto puede estar muy abierta.
 
-## Licencia y créditos
-
-- Código propio del desafío (escena, `Assets/NavianChallenge/`, esta documentación): MIT © Navian — ver [`LICENSE`](LICENSE).
-- Librerías de terceros (mantienen su propia licencia): UnityVolumeRendering (MIT), Nifti.NET (MIT), openDicom (LGPL). Detalle en [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).
-- Dataset: la MRI IXI025 y los meshes derivados están bajo CC BY-SA 3.0, con crédito al proyecto [IXI](https://brain-development.org/ixi-dataset/). Si redistribuís la data o trabajos derivados, mantené la atribución y la licencia.
